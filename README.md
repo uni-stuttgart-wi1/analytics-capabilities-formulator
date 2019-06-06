@@ -1,4 +1,5 @@
 [![MIT License][license-shield]][license-url]
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8e21cf77-1854-4f80-b0ea-adc97dcc1f03/deploy-status)](https://app.netlify.com/sites/archicap-formulator/deploys)
 
 # <img src="https://avatars3.githubusercontent.com/u/51455253" alt="University of Stuttgart - Department of Information Systems I" width="250">
 
