@@ -1,0 +1,19 @@
+<div class="formulater">
+  We need to
+  <mat-form-field>
+    <input matInput placeholder="action" [(ngModel)]="action">
+  </mat-form-field>
+  to get insights with
+  <mat-form-field>
+    <input matInput placeholder="expected outcome" [(ngModel)]="expectedOutcome">
+  </mat-form-field>
+  in order to support
+  <mat-form-field>
+    <input matInput placeholder="business task" [(ngModel)]="businessTask">
+  </mat-form-field>
+  in an environment with
+  <mat-form-field>
+    <input matInput placeholder="restrictions of the solution space" [(ngModel)]="environmentRestriction">
+  </mat-form-field>
+</div>
+<button mat-raised-button color="primary" (click)="add()">Add capability</button>

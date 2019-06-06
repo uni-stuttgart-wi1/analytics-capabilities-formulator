@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  text-align: center;
+}
+.container {
+  max-width: 1070px;
+  margin: auto;
+  text-align: left;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: ". .";
+  .general-information {
+    align-self: center;
+  }
+}
+
+footer {
+  color: #666;
+  font-size: 0.8rem;
+  padding: 25px;
+}
