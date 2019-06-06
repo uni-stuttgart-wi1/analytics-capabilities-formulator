@@ -1,10 +1,11 @@
-[![MIT License][license-shield]][license-url]
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8e21cf77-1854-4f80-b0ea-adc97dcc1f03/deploy-status)](https://app.netlify.com/sites/archicap-formulator/deploys)
 
 # <img src="https://avatars3.githubusercontent.com/u/51455253" alt="University of Stuttgart - Department of Information Systems I" width="250">
 
 > A simple tool to formulate analytics capabilities
 
+Web-Version can be found here [https://archicap-formulator.netlify.com/](https://archicap-formulator.netlify.com/)
 
 ## Background
 
