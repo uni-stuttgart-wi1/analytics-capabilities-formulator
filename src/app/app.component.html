@@ -11,6 +11,9 @@
         to the <a href="https://github.com/uni-stuttgart-wi1/analytics-capabilities-collection" target="_blank">analytics capabilities repository</a>
         created by the Department of Information Systems I of the University of Stuttgart.
       </p>
+      <div *ngIf="capabilities.length > 0">
+        <a [href]="mailStringSafe" mat-raised-button color="primary" target="_blank">Submit my capability list</a>
+      </div>
     </div>
   </header>
 
@@ -18,8 +21,7 @@
 
     <app-formulate></app-formulate>
 
-
-    <mat-card  id="cap-list" *ngIf="capabilities.length > 0"  class="mat-typography">
+    <mat-card  id="cap-list" *ngIf="capabilities.length > 0" class="mat-typography">
       <mat-card-header>
         <h3 class="mat-line">My Capabilities</h3>
       </mat-card-header>

@@ -64,6 +64,7 @@ export class FormulateComponent  {
     this.expectedOutcome = '';
     this.environmentRestriction = '';
     this.businessTask = '';
+    this.selectedOptions = [];
   }
 
 }
