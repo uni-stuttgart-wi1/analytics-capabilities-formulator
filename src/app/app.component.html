@@ -19,17 +19,14 @@
     <app-formulate></app-formulate>
 
 
-    <div id="cap-list" *ngIf="capabilities.length > 0">
-      <h3>My Capabilities</h3>
-      <mat-nav-list *ngFor="let capability of capabilities">
-        <mat-list-item>
-          <span matLine>{{ capability.formulation }}</span>
-          <button mat-icon-button color="warn" (click)="remove(capability)">
-            <mat-icon>remove_circle</mat-icon>
-          </button>
-        </mat-list-item>
-      </mat-nav-list>
-    </div>
+    <mat-card  id="cap-list" *ngIf="capabilities.length > 0"  class="mat-typography">
+      <mat-card-header>
+        <h3 class="mat-line">My Capabilities</h3>
+      </mat-card-header>
+      <mat-card-content>
+        <app-capability *ngFor="let capability of capabilities" [capability]="capability"></app-capability>
+      </mat-card-content>
+    </mat-card>
 
   </div>
 

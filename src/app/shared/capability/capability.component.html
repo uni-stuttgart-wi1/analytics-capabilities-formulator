@@ -1,0 +1,13 @@
+<mat-expansion-panel *ngIf="capability">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      {{ capability.formulation }}
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <mat-panel-description>
+      <mat-list dense>
+        <h3 matSubheader>Products to implement this capability</h3>
+        <mat-list-item *ngFor="let product of capability.products"> {{ product }} </mat-list-item>
+      </mat-list>
+  </mat-panel-description>
+</mat-expansion-panel>

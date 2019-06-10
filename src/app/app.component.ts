@@ -17,7 +17,7 @@ export class AppComponent {
   constructor(private stage: StageService) {
     this.year = new Date().getFullYear();
 
-    this.stage.capabilites.subscribe( capabilities => {
+    this.stage.capabilities.subscribe(capabilities => {
       if (capabilities) {
         this.capabilities = capabilities;
       }

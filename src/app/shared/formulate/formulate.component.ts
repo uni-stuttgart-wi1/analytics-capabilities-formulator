@@ -39,7 +39,14 @@ export class FormulateComponent  {
   businessTask = '';
   environmentRestriction = '';
 
-  constructor(private stage: StageService) { }
+  products: string[] = [];
+  selectedOptions: string[] = [];
+
+  constructor(private stage: StageService) {
+    stage.getProducts().then(r => {
+      this.products = r;
+    });
+  }
 
 
   add() {
@@ -50,7 +57,8 @@ export class FormulateComponent  {
       expectedOutcomes: [this.expectedOutcome],
       environmentRestrictions: [this.environmentRestriction],
       businessTasks: [this.businessTask],
-      formulation: f
+      formulation: f,
+      products: this.selectedOptions
     });
     this.action = '';
     this.expectedOutcome = '';
