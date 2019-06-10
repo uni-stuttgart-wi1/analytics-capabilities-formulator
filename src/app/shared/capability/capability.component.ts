@@ -1,5 +1,5 @@
 import {Component, Input } from '@angular/core';
-import {Capability} from "../stage.service";
+import {Capability, StageService} from "../stage.service";
 
 @Component({
   selector: 'app-capability',
@@ -10,6 +10,10 @@ export class CapabilityComponent {
 
   @Input() capability: Capability;
 
-  constructor() { }
+  constructor(private stage: StageService) { }
+
+  remove(capability: Capability) {
+    this.stage.removeCapability(capability);
+  }
 
 }

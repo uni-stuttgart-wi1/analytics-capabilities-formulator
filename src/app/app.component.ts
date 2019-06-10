@@ -28,10 +28,6 @@ export class AppComponent {
 
   }
 
-  remove(capability: Capability) {
-    this.stage.removeCapability(capability);
-  }
-
   updateMailstring() {
     let mailString = 'We suggest the following analytics capabilites:\n\n';
     let i = 1;

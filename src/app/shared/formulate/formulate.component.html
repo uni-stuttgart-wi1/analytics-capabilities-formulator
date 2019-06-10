@@ -13,14 +13,13 @@
       <mat-form-field>
         <input matInput placeholder="business task" [(ngModel)]="businessTask">
       </mat-form-field>
-      in an environment with
+      <br />in an environment with
       <mat-form-field>
         <input matInput placeholder="restrictions of the solution space" [(ngModel)]="environmentRestriction">
       </mat-form-field>
     </div>
 
     <mat-selection-list #selectedProducts [(ngModel)]="selectedOptions" dense="true">
-      <h3 matLine>Products</h3>
       <p>Products that your organizatio use (or plan to use) to implement this capability.</p>
       <mat-list-option *ngFor="let product of products" [value]="product">
         {{ product }}
