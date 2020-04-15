@@ -14,7 +14,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import {PapaParseModule} from 'ngx-papaparse';
 import { CapabilityComponent } from './shared/capability/capability.component';
 @NgModule({
   declarations: [
@@ -24,7 +23,6 @@ import { CapabilityComponent } from './shared/capability/capability.component';
   ],
   imports: [
     HttpClientModule,
-    PapaParseModule,
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
